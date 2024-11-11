@@ -14,6 +14,7 @@
 		EA8962122CB894A9000E4F15 /* MovieCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8962112CB894A9000E4F15 /* MovieCollectionTests.swift */; };
 		EA89621C2CB894A9000E4F15 /* MovieCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA89621B2CB894A9000E4F15 /* MovieCollectionUITests.swift */; };
 		EA89621E2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA89621D2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift */; };
+		EAB827302CDD9477001A27CC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8272F2CDD9477001A27CC /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EA8962172CB894A9000E4F15 /* MovieCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA89621B2CB894A9000E4F15 /* MovieCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionUITests.swift; sourceTree = "<group>"; };
 		EA89621D2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAB8272F2CDD9477001A27CC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		EA8961FF2CB894A7000E4F15 /* MovieCollection */ = {
 			isa = PBXGroup;
 			children = (
+				EAB8272E2CDD9403001A27CC /* Network */,
+				EAB8272C2CDD9389001A27CC /* MovieList */,
 				EA8962002CB894A7000E4F15 /* MovieCollectionApp.swift */,
-				EA8962022CB894A7000E4F15 /* ContentView.swift */,
 				EA8962042CB894A9000E4F15 /* Assets.xcassets */,
 				EA8962062CB894A9000E4F15 /* Preview Content */,
 			);
@@ -125,6 +128,30 @@
 				EA89621D2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift */,
 			);
 			path = MovieCollectionUITests;
+			sourceTree = "<group>";
+		};
+		EAB8272C2CDD9389001A27CC /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8272D2CDD939A001A27CC /* Views */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		EAB8272D2CDD939A001A27CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA8962022CB894A7000E4F15 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAB8272E2CDD9403001A27CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8272F2CDD9477001A27CC /* API.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8962032CB894A7000E4F15 /* ContentView.swift in Sources */,
+				EAB827302CDD9477001A27CC /* API.swift in Sources */,
 				EA8962012CB894A7000E4F15 /* MovieCollectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

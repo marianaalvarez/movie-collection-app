@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    let api = API()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Click to load movies", action: api.fetchMovie)
         }
         .padding()
     }
