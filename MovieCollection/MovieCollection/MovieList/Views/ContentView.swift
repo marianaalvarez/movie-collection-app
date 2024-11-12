@@ -8,19 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    let api = API()
+    let api: FecthMovieAPIProtocol
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Button("Click to load movies", action: api.fetchMovie)
+            Button("Click to load movies", action: fetchMovie)
         }
         .padding()
+    }
+    
+    private func fetchMovie() {
+        api.fetchMovie { result in
+            switch result {
+            case .success(let movie):
+                print("Filme: \(movie)")
+            case .failure(let error):
+                showErrorFor(error)
+            }
+        }
+    }
+    
+    private func showErrorFor(_ customError: CustomError) {
+        switch customError {
+        case .connectionError, .invalidStatusCode, .parseError:
+            print("Connection error")
+        case .movieNotFoundError:
+            print("Movie not found")
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(api: FecthMovieAPI())
 }

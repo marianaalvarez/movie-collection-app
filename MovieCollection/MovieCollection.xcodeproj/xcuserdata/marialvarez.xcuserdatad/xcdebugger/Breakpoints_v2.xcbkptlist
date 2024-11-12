@@ -14,8 +14,8 @@
             filePath = "MovieCollection/Network/API.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "fetchMovie()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,24 @@
             filePath = "MovieCollection/Network/API.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchMovie()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6854072C-155E-402C-95FC-2FA06BE511AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieCollection/MovieList/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "fetchMovie()"
             landmarkType = "7">
          </BreakpointContent>
