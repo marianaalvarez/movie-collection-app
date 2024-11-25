@@ -23,14 +23,4 @@ struct Movie: Codable {
         case plot = "Plot"
         case poster = "Poster"
     }
-    
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.title = try container.decode(String.self, forKey: .title)
-        self.year = try container.decode(String.self, forKey: .year)
-        self.genre = try container.decode(String.self, forKey: .genre)
-        self.director = try container.decode(String.self, forKey: .director)
-        self.plot = try container.decode(String.self, forKey: .plot)
-        self.poster = try container.decode(String.self, forKey: .poster)
-    }
 }
