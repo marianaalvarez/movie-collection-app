@@ -11,5 +11,5 @@ enum CustomError: Error {
     case connectionError
     case invalidStatusCode
     case parseError
-    case movieNotFoundError
+    case dataNotFoundError
 }

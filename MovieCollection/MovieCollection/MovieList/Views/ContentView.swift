@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let api: FecthMovieAPIProtocol
+    let service: MovieServiceProtocol
     
     var body: some View {
         VStack {
@@ -21,7 +21,7 @@ struct ContentView: View {
     }
     
     private func fetchMovie() {
-        api.fetchMovie { result in
+        service.fetchMovie(title: "Spider") { result in
             switch result {
             case .success(let movie):
                 print("Filme: \(movie)")
@@ -35,12 +35,12 @@ struct ContentView: View {
         switch customError {
         case .connectionError, .invalidStatusCode, .parseError:
             print("Connection error")
-        case .movieNotFoundError:
+        case .dataNotFoundError:
             print("Movie not found")
         }
     }
 }
 
 #Preview {
-    ContentView(api: FecthMovieAPI())
+    ContentView(service: MovieService(apiClient: APIClient.shared))
 }

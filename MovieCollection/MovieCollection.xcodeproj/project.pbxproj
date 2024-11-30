@@ -14,9 +14,10 @@
 		EA8962122CB894A9000E4F15 /* MovieCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8962112CB894A9000E4F15 /* MovieCollectionTests.swift */; };
 		EA89621C2CB894A9000E4F15 /* MovieCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA89621B2CB894A9000E4F15 /* MovieCollectionUITests.swift */; };
 		EA89621E2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA89621D2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift */; };
-		EAB827302CDD9477001A27CC /* FecthMovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8272F2CDD9477001A27CC /* FecthMovieAPI.swift */; };
+		EAB827302CDD9477001A27CC /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8272F2CDD9477001A27CC /* MovieService.swift */; };
 		EAB827332CE2C13B001A27CC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB827322CE2C13B001A27CC /* Movie.swift */; };
 		EAB827352CE2C50E001A27CC /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB827342CE2C50E001A27CC /* CustomErrors.swift */; };
+		EAB827372CFA84BB001A27CC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB827362CFA84BB001A27CC /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +48,10 @@
 		EA8962172CB894A9000E4F15 /* MovieCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA89621B2CB894A9000E4F15 /* MovieCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionUITests.swift; sourceTree = "<group>"; };
 		EA89621D2CB894A9000E4F15 /* MovieCollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EAB8272F2CDD9477001A27CC /* FecthMovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FecthMovieAPI.swift; sourceTree = "<group>"; };
+		EAB8272F2CDD9477001A27CC /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		EAB827322CE2C13B001A27CC /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EAB827342CE2C50E001A27CC /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
+		EAB827362CFA84BB001A27CC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		EAB8272C2CDD9389001A27CC /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				EAB827382CFA89C1001A27CC /* Service */,
 				EAB8272D2CDD939A001A27CC /* Views */,
 			);
 			path = MovieList;
@@ -154,8 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				EAB827312CE2C12B001A27CC /* Models */,
-				EAB8272F2CDD9477001A27CC /* FecthMovieAPI.swift */,
 				EAB827342CE2C50E001A27CC /* CustomErrors.swift */,
+				EAB827362CFA84BB001A27CC /* APIClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -166,6 +169,14 @@
 				EAB827322CE2C13B001A27CC /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EAB827382CFA89C1001A27CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8272F2CDD9477001A27CC /* MovieService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +311,10 @@
 			files = (
 				EA8962032CB894A7000E4F15 /* ContentView.swift in Sources */,
 				EAB827352CE2C50E001A27CC /* CustomErrors.swift in Sources */,
-				EAB827302CDD9477001A27CC /* FecthMovieAPI.swift in Sources */,
+				EAB827302CDD9477001A27CC /* MovieService.swift in Sources */,
 				EAB827332CE2C13B001A27CC /* Movie.swift in Sources */,
 				EA8962012CB894A7000E4F15 /* MovieCollectionApp.swift in Sources */,
+				EAB827372CFA84BB001A27CC /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
