@@ -30,7 +30,7 @@ And there's no movie stored in cache memory
 Then the app should show a welcoming message
 ```
 
-Scenario: search a movie (success)
+Scenario: search movie (success)
 
 ```
 Given the user has connectivity
@@ -40,7 +40,7 @@ Then the app should display the movie
 And update the cache memory
 ```
 
-Scenario: search a movie (failure)
+Scenario: search movie (failure)
 
 ```
 Given the user has connectivity
@@ -48,6 +48,11 @@ When the user search for a movie title
 And the remote server returns an invalid response 
 Then the app should display an error message
 ```
+
+Flowchart
+
+<img width="298" alt="Screenshot 2024-12-10 at 10 31 33 pm" src="https://github.com/user-attachments/assets/2bf7faf7-6dbd-40d6-8428-ca8ef6d8d6ff">
+
 
 ### Narrative #2
 
@@ -75,7 +80,9 @@ When the user opens the search screen
 And there's no movie stored in cache memory 
 Then the app should show an error message
 ```
+Flowchart
 
+<img width="288" alt="Screenshot 2024-12-10 at 10 31 15 pm" src="https://github.com/user-attachments/assets/d20d3b1c-748f-40b8-9d12-44cacdc82d73">
 
 ## Movies List Feature Specs
 
@@ -105,6 +112,12 @@ When the user clicks the button to add the movie to their collection
 And the request to save the movie in a local storage fails 
 Then the app should display an error message
 ```
+
+Flowchart
+
+<img width="298" alt="Screenshot 2024-12-10 at 10 33 04 pm" src="https://github.com/user-attachments/assets/d0c6b836-df5e-4fb4-ade1-cb20cd1ba3f3">
+
+
 ### Story: User wants to see their movie collection
 ### Narrative #1
 
@@ -132,6 +145,11 @@ And the request to fetch all saved movies from local storage fails
 Then the app should display an error message
 ```
 
+Flowchart
+
+<img width="430" alt="Screenshot 2024-12-10 at 10 31 50 pm" src="https://github.com/user-attachments/assets/a6ca7c48-dfcc-4b5f-8e11-f6a089992a31">
+
+
 ### Story: User wants remove a movie from the list
 
 Scenario: remove movie from collection (success)
@@ -151,4 +169,8 @@ When the user clicks the button to remove a movie from the collection
 And the request to remove the movie from local storage fails 
 Then the app should display an error message
 ```
+
+Flowchart
+
+<img width="340" alt="Screenshot 2024-12-10 at 10 34 58 pm" src="https://github.com/user-attachments/assets/a07b1e5a-ca45-4a86-9237-28ffb328ee5b">
 
