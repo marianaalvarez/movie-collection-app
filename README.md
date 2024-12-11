@@ -108,9 +108,9 @@ GET /?apikey=[apiKey]&t=[title]
    "Title":"Spider",
    "Year":"2002",
    "Director":"David Cronenberg",
+   "Genre": "Drama, Mystery, Thriller",
    "Plot":"A mentally disturbed man takes residence in a halfway house. His mind gradually slips back into the realm created by his illness, where he replays a key part of his childhood.",
-   "Poster":"image-URL",
-   ],
+   "Poster": "image-URL"
 }
 ```
 
