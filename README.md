@@ -102,6 +102,8 @@ Payload
 ```
 GET /?apikey=[apiKey]&t=[title]
 
+200 RESPONSE
+
 {
    "Title":"Spider",
    "Year":"2002",
