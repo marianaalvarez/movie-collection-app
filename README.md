@@ -6,7 +6,7 @@
 ### Narrative #1
 
 ```
-As an online user,
+As an online user
 I want the app to display my most recently searched movie
 and allow me to search for new movies using a title input
 so I can easily access my search history and see the movie details
@@ -83,6 +83,35 @@ Then the app should show an error message
 Flowchart
 
 <img width="288" alt="Screenshot 2024-12-10 at 10 31 15 pm" src="https://github.com/user-attachments/assets/d20d3b1c-748f-40b8-9d12-44cacdc82d73">
+
+## Model Specs
+
+Movie
+
+| Property      | Type |
+| ------------- | ------------- |
+| title         | String  |
+|  year         | String  |
+|  genre     | String  |
+|  director     | String  |
+|  plot     | String  |
+|  poster     | String  |
+
+Payload
+
+```
+GET /?apikey=[apiKey]&t=[title]
+
+{
+   "Title":"Spider",
+   "Year":"2002",
+   "Director":"David Cronenberg",
+   "Plot":"A mentally disturbed man takes residence in a halfway house. His mind gradually slips back into the realm created by his illness, where he replays a key part of his childhood.",
+   "Poster":"image-URL",
+   ],
+}
+```
+
 
 ## Movies List Feature Specs
 
@@ -173,4 +202,6 @@ Then the app should display an error message
 Flowchart
 
 <img width="340" alt="Screenshot 2024-12-10 at 10 34 58 pm" src="https://github.com/user-attachments/assets/a07b1e5a-ca45-4a86-9237-28ffb328ee5b">
+
+
 
