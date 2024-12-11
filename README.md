@@ -12,21 +12,21 @@ and allow me to search for new movies using a title input
 so I can easily access my search history and see the movie details
 ```
 
-Scenario: movie stored in local storage
+Scenario: movie stored in cache
 
 ```
 Given the user has connectivity
 When the user opens the search screen
-And there's a movie stored in local storage 
+And there's a movie stored in cache memory
 Then the app should display the movie
 ```
 
-Scenario: no movie stored in local storage
+Scenario: no movie stored in cache
 
 ```
 Given the user has connectivity
 When the user opens the search screen
-And there's no movie stored in local storage 
+And there's no movie stored in cache memory
 Then the app should show a welcoming message
 ```
 
@@ -36,8 +36,8 @@ Scenario: search a movie (success)
 Given the user has connectivity
 When the user search for a movie title
 And the remote server returns a valid response with a movie
-Then the app should display the movie details
-And update the local storage
+Then the app should display the movie
+And update the cache memory
 ```
 
 Scenario: search a movie (failure)
@@ -57,22 +57,22 @@ I want the app to display the latest saved movie
 so I can easily access my search history
 ```
 
-Scenario: movie stored in local storage
+Scenario: movie stored in cache
 
 ```
 Given the user doesn't have connectivity
 When the user opens the search screen
-And there's a movie stored in local storage 
+And there's a movie stored in cache memory
 Then the app should display the latest movie saved
 ```
 
 
-Scenario: no movie stored in local storage
+Scenario: no movie stored in cache
 
 ```
 Given the user doesn't have connectivity
 When the user opens the search screen
-And there's no movie stored in local storage 
+And there's no movie stored in cache memory 
 Then the app should show an error message
 ```
 
