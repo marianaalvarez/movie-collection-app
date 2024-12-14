@@ -205,5 +205,8 @@ Flowchart
 
 <img width="340" alt="Screenshot 2024-12-10 at 10 34 58 pm" src="https://github.com/user-attachments/assets/a07b1e5a-ca45-4a86-9237-28ffb328ee5b">
 
+## App Architecture 
+
+<img width="725" alt="Screenshot 2024-12-13 at 9 48 55 pm" src="https://github.com/user-attachments/assets/345258b6-b866-4e35-acf6-271600dd3373" />
 
 
