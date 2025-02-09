@@ -1,5 +1,7 @@
 # Movie Collection App 🍿
 
+This repository contains a study project showcasing best practices and architectural design patterns in iOS development.
+
 ## Movie Search Feature Specs
 
 ### Story: User wants to search for a movie
